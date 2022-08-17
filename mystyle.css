@@ -1,10 +1,8 @@
 /*global*/
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap');
-
 *{
     margin: 0;
     padding: 0;
-
 }
 body{
     font-family: 'Roboto', sans-serif;
@@ -21,7 +19,11 @@ h2,h3,h4{
     text-transform: uppercase;
 }
 /*utilities*/
-
+.container{
+    width: 95%;
+    margin-right: auto;
+    margin-left: auto;
+}
 /*navigation*/
 nav.menu{
     display: flex;
@@ -35,31 +37,25 @@ nav.menu img{
     height: 32px;
 }
 img.natgeo-frame{
-
 }
 
 img.natgeo-logo{
     display: none;
-
 }
 a.login-link{
     text-transform: uppercase;
     font-size: 13px;
     font-weight: bold;
     letter-spacing: 4px;
-    margin-right: 25px;   
-
+    margin-right: 25px; 
 }
 a.search-link{
     display: none;
-
 }
 a.news-link{
     display: none;
-
 }
-a.subs-link{
-    
+a.subs-link{    
     text-transform: uppercase;
     font-size: 13px;
     font-weight: bold;
@@ -68,50 +64,170 @@ a.subs-link{
     background-color: black;
     color: white;
     padding: 15px;
-
-
 }
-
-
 a.menu-link span{
     display: none;
 }
 /*header*/
 header{
-    height: 150px;
+    height: 175px;  
+    
     color: white;
 }
-
-.title{
+p.title{
     padding-top: 25px;
     padding-bottom: 5px;
     text-transform: uppercase;
     font-size: 40px;
     font-weight: bold;
-    color: white;
     text-align: center;
 }
-
-.description{
-    padding-bottom: 25px;
+p.description{
+    padding-bottom: 20px;
     text-align: center;
     color: white;
     font-size: 15px;
-}
-.description span{
-   
-    border-bottom: 2px solid yellow;
+    border-bottom: 4px solid yellow;  
+    border-bottom-left-radius: 5px;
+    
 
 }
+p.description span{   
+    border-bottom: 1px solid yellow;
+    
 
-main{
+}
+div.border{
+
+}
+/*main news*/  
+.main-news{
+    position: relative;/*the partent*/
+}
+.main-news-img :hover{
+    transform: scale(1.1);   
+}
+.main-news-text{
+    position: absolute;/*the child*/
+    top: 100px;
+    left: 20px;
     color: white;
-    text-align: left;
 }
-
-.today-picks{
-    color: white;
-    font-size: 25px;
+.main-news-text h3{
+    font-size: 12px;
+    letter-spacing: 3px;
+}
+.main-news-text p{
+    font-size: 30px;
     font-weight: bold;
+    letter-spacing: 2px;
+    line-height: 1.2;
+    margin-bottom: 20px;    
+}
+.main-news-text h4{
+    font-size: 12px;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+/*secondary news*/
+.secondary-news{  
+    margin-top: 30px;
+    margin-bottom: 30px;
+    overflow: hidden;    
+}
+.secondary-news :hover img{
+    border-bottom: 5px solid yellow;
+    transform: scale(1.1);
+}
+    .secondary-news-img img{
+        height: 250px;
+        min-width: 100%;
+}     
+.secondary-news-text{
+    background-color: white;
+    height: 110px;
+    padding: 20px;
+    margin-top: -10px;             
+}    
+.secondary-news-text h3{
+    font-size: 12px;
+     letter-spacing: 3px;
+     color: grey;
+     margin-bottom: 20px;
+}   
+.secondary-news-text h3:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.secondary-news-text p{
+    font-size: 20px;
+    font-weight: bold;   
+    margin-bottom: 20px;        
+}   
+.secondary-news-text h4{
+    font-size: 12px;
+    letter-spacing: 3px;
+    font-weight: bold;
+}    
+.todays-picks h2{
+    font-size: 32px;
+    text-transform: uppercase;           
+    color: white;
+    letter-spacing: 2px;
+    border-left: 5px solid yellow;
+    padding-left: 20px;
+    margin-bottom: 40px;
+}
+.pick-element{
+    display: flex;
+    align-items: center;
+        
 
+}
+.pick-element-img{
+    width: 100px;
+    height: fit-content;
+    
+}
+.pick-element-text{
+    color: white;
+    font-size: 15px;
+    letter-spacing: 1px;
+    padding: 15px;
+   font-weight: bold;
+}
+.pick-element-text h3{
+    font-size: 12px;
+  
+}
+.pick-element-text .subtitle{
+    font-size: 12px;
+    font-weight: lighter;
+    padding-top: 4px;   
+}
+.pick-element-text p{
+    padding-top: 15px;
+    letter-spacing: 1.5px;
+}
+
+
+
+.see-more{
+    color: white;
+    letter-spacing: 1.5px;
+    font-size: 15px;
+    text-decoration: underline 2px solid yellow;
+    text-align: center;
+    padding-top: 5px;
+    margin-top: 25px;
+    margin-bottom: 75px;
+}
+
+.see-more:hover{
+    background-color: yellow;
+    transform: perspective(1.1);
+    margin-left: 165px;
+    margin-right: 165px;
+    color: black;
+    cursor: pointer;
 }

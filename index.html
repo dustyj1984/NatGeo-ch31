@@ -5,14 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/1e3355b51a.js" crossorigin="anonymous"></script>
-<link rel="stylesheet" href="mystyle.css">
+    <link rel="stylesheet" href="mystyle.css">
 
     <title>My Nat Geo</title>
 </head>
-<body>
-    <nav class="menu">
 
-    <img class="natgeoframe" src="img/ng-border.png" alt="Nat Geo border">
+<body>
+
+    <nav class="menu">
+    
+
+    <img class="natgeo-frame" src="img/ng-border.png" alt="Nat Geo border">
     <img class="natgeo-logo" src="img/ng-logo-2fl.webp" alt="Nat Geo Logo">
 
     <div>
@@ -31,40 +34,132 @@
     <div class="border"></div>
 </header>
 
-<main>
+<div class="container">
+    <main>
     <section class="main-news">
-        <img src="img/main-news.jpg" alt="">
-        <h3>History & Culture</h3>
-        <p>These border villages still struggle 75 years...</p>    
+        <div class="main-news-img">
+            <img src="img/main-news.jpg" alt="">
+        </div>
+        <div class="main-news-text">        
+            <h3>History & Culture</h3>
+            <p>These border villages still struggle 75 years...</p>    
             <h4><i class="fa-solid fa-bars"></i>Read</h4>
+        </div>
+    </section>
+        <!--end of main news-->
+   
+        <section class="secondary-news">
+            <div class="secondary-news-img">
+                <img src="img/secondary-news.jpg" alt="">    
+            </div>
+            <div class="secondary-news-text">
+                <h3>Histroy magazine</h3>
+                <p>Who wrote the Dead Sea scrolls? Science may have the answer</p>
+                <h4><i class="fa-solid fa-bars"></i>Read</h4> 
+            </div>           
+        
         </section>
         
         <section class="secondary-news">
-            <img src="img/secondary-news.jpg" alt="">
-             <h3>Histroy magazine</h3>
-             <p>Who wrote the Dead Sea scrolls? Science may have the answer</p>
-             <h4><i class="fa-solid fa-bars"></i>Read</h4> 
-        
-        </section>
-        
-        <section class="secondar-news">
-            <img src="img/secondary-news2.jpg" alt="">
-            <h3>magazine</h3>
-            <p>Cox's Bazar, know as a refugee camp, is also a vaction site</p>
-            <h4><i class="fa-solid fa-bars"></i>Read</h4>
+            <div class="secondary-news-img">
+                <img src="img/secondary-news2.jpg" alt="">
+
+            </div>
+            <div class="secondary-news-text">
+                <h3>magazine</h3>
+                <p>Cox's Bazar, know as a refugee camp, is also a vaction site</p>
+                <h4><i class="fa-solid fa-bars"></i>Read</h4>
+            </div>
+            
+             
         </section>
 
     </main>
-    <section class="today-picks">
+
+    <section class="todays-picks">
 
         <h2>Today's Picks</h2>
-
-        <div class="pick-elements">
-            <img src="img/picks1.jpg" alt="">
-            <h3>Environment<span>planet possible</span>
-            </h3>
-            <p>How the climate bill will dramatically cut U.S emissions</p>
+        <ul>
+        <!--pick1-->
+        <div class="pick-element">
+            <div class="pick-element-img">
+                    <img src="img/picks1.jpg" alt="">
+            </div>
+    
+            <div class="pick-element-text">
+    
+                <h3>Environment</h3>
+                <h3 class="subtitle">Planet possible
+                </h3>
+                <p>How the climate bill will dramatically cut U.S emissions</p>
+            </div>
         </div>
+    <!--pick2-->
+        <div class="pick-element">
+            <div class="pick-element-img">
+                <img src="img/picks2.jpg" alt="">
+            </div>
+    
+            <div class="pick-element-text">
+        
+                <h3>Science</h3>
+               
+                </h3>
+                <p>A second asteroid may have struck during the dinosuar's demise</p>
+            </div>
+        
+        </div>
+        <!--pick3-->
+        <div class="pick-element">
+            <div class="pick-element-img">
+                <img src="img/pick3.webp" alt="">
+            </div>
+    
+            <div class="pick-element-text">
+        
+                <h3>Paid Content</h3>
+               
+                </h3>
+                <p>Why we shouldn't ingore safety eduction </p>
+            </div>
+        <!--pick4-->
+        </div>
+        <div class="pick-element">
+            <div class="pick-element-img">
+                <img src="img/pick4.webp" alt="">
+            </div>
+    
+            <div class="pick-element-text">
+        
+                <h3>Environment</h3>
+               
+                </h3>
+                <p>Big changes coming for the Colorado River soon could get messy</p>
+            </div>
+        
+        </div>
+        <!--pick5-->
+        <div class="pick-element">
+            <div class="pick-element-img">
+                <img src="img/pick5.webp" alt="">
+            </div>
+    
+            <div class="pick-element-text">
+        
+                <h3>Travel</h3>
+               
+                </h3>
+                <p>Explore Pakistan's wildest, most beaufiful landscapes</p>
+            </div>
+        
+        </div>
+        
+    
+    
+    </ul> 
+       
+      <h3 class="see-more">See More</h3>
+      
 
     </section>
 </body>
