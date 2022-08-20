@@ -47,7 +47,7 @@ a.login-link{
     font-size: 13px;
     font-weight: bold;
     letter-spacing: 4px;
-    margin-right: 25px; 
+    margin-right: 15px; 
 }
 a.search-link{
     display: none;
@@ -56,22 +56,56 @@ a.news-link{
     display: none;
 }
 a.subs-link{    
+    background: linear-gradient(to left,black 50%,yellow 50%) right;
+    background-size: 200%;
+    transition:.5s ease-out;
     text-transform: uppercase;
     font-size: 13px;
     font-weight: bold;
     letter-spacing: 4px;
-    margin-right: 25px;
+    margin-right: 15px;
     background-color: black;
     color: white;
     padding: 15px;
 }
+a.subs-link:hover{
+    background-position: 0 100%;
+    color: black;
+}
 a.menu-link span{
     display: none;
 }
+
+@media(min-width:768px){
+    img.natgeo-logo{
+        display: block;
+    }
+    img.natgeo-frame{
+        display: none;
+    }
+    a.search-link{
+        display: inline-block;
+        margin-right: 15px;
+    }
+    a.news-link{
+        display: inline-block;
+        margin-right: 15px;
+        font-size: 14px;
+    }
+    
+     a.menu-link span{
+         display: inline-block;
+         text-transform: uppercase;
+         font-size: 13px;
+         font-weight: bold;
+         letter-spacing: 4px;
+         margin-right: 15px;
+
+    }
+}
 /*header*/
 header{
-    height: 175px;  
-    
+    height: 175px;      
     color: white;
 }
 p.title{
@@ -86,10 +120,7 @@ p.description{
     padding-bottom: 20px;
     text-align: center;
     color: white;
-    font-size: 15px;
-    border-bottom: 4px solid yellow;  
-    border-bottom-left-radius: 5px;
-    
+    font-size: 15px;  
 
 }
 p.description span{   
@@ -98,19 +129,26 @@ p.description span{
 
 }
 div.border{
+    border-bottom: 4px solid yellow;  
+    width: 50px;
+    margin-right: auto;
+    margin-left: auto;
 
 }
 /*main news*/  
-.main-news{
+.main-news-img{
     position: relative;/*the partent*/
+  
 }
 .main-news-img :hover{
     transform: scale(1.1);   
 }
 .main-news-text{
-    position: absolute;/*the child*/
-    top: 100px;
-    left: 20px;
+    position: absolute;/*the child*/    
+    top: 125px;   
+    left: 1.2rem;
+   
+    
     color: white;
 }
 .main-news-text h3{
@@ -118,7 +156,7 @@ div.border{
     letter-spacing: 3px;
 }
 .main-news-text p{
-    font-size: 30px;
+    font-size: 20px;
     font-weight: bold;
     letter-spacing: 2px;
     line-height: 1.2;
@@ -135,6 +173,11 @@ div.border{
     margin-bottom: 30px;
     overflow: hidden;    
 }
+@media(min-width:768px){
+
+}
+
+
 .secondary-news :hover img{
     border-bottom: 5px solid yellow;
     transform: scale(1.1);
@@ -169,6 +212,29 @@ div.border{
     letter-spacing: 3px;
     font-weight: bold;
 }    
+
+@media(min-width:768px){
+    .container{
+        width: 90%;
+    }
+   
+    .grid-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 1rem;
+
+    }
+    .flex-container-reversed{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .flex-container-reversed main{
+        flex-basis: 50rem;
+    }
+    .flex-container-reversed section{
+        flex-basis: 25rem;
+    }
+}
 .todays-picks h2{
     font-size: 32px;
     text-transform: uppercase;           
@@ -185,16 +251,40 @@ div.border{
 
 }
 .pick-element-img{
-    width: 100px;
-    height: fit-content;
+    width: 85px;
+
     
+}
+.pick1{
+
+    height: 85px;
+    margin-right: 75px;
+}
+.pick2{
+    height: 85px;
+    margin-right: 75px;
+}
+.pick3{
+    height: 100px;
+    margin-right: 75px;
+    
+}
+.pick4{
+    height: 85px;
+    margin-right: 75px;
+
+}
+.pick5{
+    height: 85px;
+    margin-right: 75px;
+
 }
 .pick-element-text{
     color: white;
     font-size: 15px;
     letter-spacing: 1px;
     padding: 15px;
-   font-weight: bold;
+    font-weight: bold;
 }
 .pick-element-text h3{
     font-size: 12px;
